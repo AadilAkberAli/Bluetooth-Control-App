@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightGrey"
+        android:orientation="vertical"
+        android:id="@+id/mainLayout">
+
+
+        <!--        &lt;!&ndash;Header Toolbar&ndash;&gt;-->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/base_toolbar" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/notosanstc_bold"
+            android:text="Download Samples Brochure"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/searchBox"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/searchBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_button"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_search_24" />
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Search Products"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bluetoothbtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchBox"
+            android:layout_gravity="left"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/searchBox"
+                android:layout_weight="1"
+                android:text="scan" />
+
+            <Button
+                android:id="@+id/discover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/scan"
+                android:layout_weight="1"
+                android:text="@string/discoverable" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_bluetooth_24"></ImageView>
+
+                <TextView
+                    android:id="@+id/connectedstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Not Connected"
+                    android:textColor="@color/colorRed" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/searchBox"
+            android:background="@drawable/background_button_filled"
+            android:text="Merge"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/searchBox"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bluetoothbtns"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bluetoothbtns" />
+
+        <include
+            android:id="@+id/llProgressBar"
+            layout="@layout/layout_progressbar"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</layout>

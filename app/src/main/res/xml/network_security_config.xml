@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+       <trust-anchors>
+            <certificates src="@raw/start_samipharma_com_pk" />
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">samipharma.com.pk</domain>
+        <domain includeSubdomains="true">http://10.0.1.46:9480</domain>
+<!--        <domain includeSubdomains="true">https://qa-docinfoapi.samipharma.com.pk</domain>-->
+<!--        <domain includeSubdomains="true">https://uat-docinfoapi.samipharma.com.pk/</domain>-->
+        <trust-anchors>
+            <certificates src="@raw/start_samipharma_com_pk" />
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

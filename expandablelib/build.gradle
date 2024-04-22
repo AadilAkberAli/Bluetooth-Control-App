@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "27.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 31
+        versionCode 16
+        versionName "2.9.2"
+    }
+}
+
+/*publish {
+    userOrg = 'cachapa'
+    repoName = 'maven'
+    groupId = 'net.cachapa.expandablelayout'
+    artifactId = 'expandablelayout'
+    publishVersion = android.defaultConfig.versionName
+    autoPublish = true
+    dryRun = false
+    publications = ['maven']
+}*/
+
+// BINTRAY_KEY: https://bintray.com/profile/edit
+// ./gradlew bintrayUpload -PbintrayUser=[USERNAME] -PbintrayKey=[BINTRAY_KEY]

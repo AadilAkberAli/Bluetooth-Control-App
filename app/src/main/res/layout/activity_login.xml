@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+         >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+      >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/sami_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/notosanstc_medium"
+                        android:text="Remote "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:fontFamily="@font/notosanstc_medium"
+                        android:text="Control "
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doc_recent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/notosanstc_regular"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType= "fitXY"
+                    android:src="@drawable/lgn2" />
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/notosanstc_regular"
+                        android:text="User ID"
+                        android:textColor="@color/textColor"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/background_edt"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/notosanstc_regular"
+                        android:hint="00000"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/notosanstc_regular"
+                        android:text="Password"
+                        android:textColor="@color/textColor"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edtPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/background_edt"
+                        android:drawableLeft="@drawable/ic_lock"
+                        android:drawablePadding="12dp"
+                        android:hint="******"
+                        android:inputType="textPassword"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/background_button"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/notosanstc_medium"
+                        android:text="LOGIN"
+                        android:textColor="@color/colorBlack" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/notosanstc_regular"
+                        android:text="Forgot Password"
+                        android:textColor="@color/blue"
+                        android:id="@+id/btnForgotPassword"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

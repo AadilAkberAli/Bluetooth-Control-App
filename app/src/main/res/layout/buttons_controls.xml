@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/controls"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/previousbutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_skip_previous_24"></ImageButton>
+
+        <LinearLayout
+            android:id="@+id/pagenum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="3.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/background_button"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editpagenum"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="No."
+                android:numeric="integer"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/nextbutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_skip_next_24"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/menus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_menu_24"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+            android:visibility="gone"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/downloadedpdfs"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_picture_as_pdf_24"
+            android:visibility="gone"></ImageButton>
+
+    </LinearLayout>
+</RelativeLayout>

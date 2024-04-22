@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AEEF</color>
+    <color name="colorPrimaryLight">#55CEFB</color>
+    <color name="colorPrimaryDark">#359EDC</color>
+    <color name="matchteal">#92b7a6</color>
+    <color name="colorAccent">#00AEEF</color>
+    <color name="backgroundColor">#F4F6F9</color>
+    <color name="colorGreyDark">#888787</color>
+    <color name="LightGrey">#f0f0f2</color>
+    <color name="Grey">#E1DFDF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="textColor">#000</color>
+    <color name="ic_blue">#26a6fe</color>
+    <color name="blue">#00AEEF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#ffd426</color>
+    <color name="colorGreen">#4caf50</color>
+    <color name="colorGrey_light">#ebebeb</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorMateGreen">#218f82</color>
+    <color name="medium_text_disabled">#4D000000</color>
+
+    <color name="controlBackgroundHighlighted">#FF584B45</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="axesPriceColor">#A666CE</color>
+    <color name="black">#000000</color>
+
+    <!--Gradient colors for the ExampleActivity background. Resolved automatically by applying the Fragment short name of each example group to the _example_menu_color# string.-->
+
+    <!--Chart-->
+    <!--DataForm-->
+    <!--Calendar-->
+    <!--Side Drawer-->
+    <!--ListView-->
+    <color name="grey_white">#BBF3F2F2</color>
+
+    <!---Table view lib -->
+    <color name="cell_background_color">#ffffff</color>
+    <color name="header_line_color">#ffffff</color>
+    <color name="table_view_default_text_color">#0a0a0a</color>
+    <color name="teal_200">#008080</color>
+    <!-- Table view lib -->
+</resources>
